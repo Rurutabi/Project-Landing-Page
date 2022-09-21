@@ -2,13 +2,11 @@ body{
     font-family: 'Times New Roman', Times, serif;
     margin:0;
     min-height: 100vh;
-    background-image: url("./images/background.jpeg");
+    display: flex;
+    flex-direction: column;
+    background-image:url('./images/background.jpeg');
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.container{
-  
 }
 
 /*Header css*/
@@ -19,13 +17,14 @@ body{
     font-size: 18px;
     padding: 12px;
     justify-content: space-between;
-    align-items: center;
-    color:white;
+    align-items: center;    
+    background-color: blanchedalmond;
+    margin-bottom: auto;
 }
 
-img{
-    width:200px;
-    height: 100px;
+.img-header{
+    width:150px;
+    height: 75px;
     margin-left: 50px;
 }
 
@@ -35,6 +34,60 @@ img{
     gap:24px;
 }
 
-.background{
+.middle-box {    
+   display: flex;
+   align-self: center;
+   justify-content: center;
+   background-color: white;
+   width: 860px;
+   border-radius: 10px;
+   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+   padding: 32px;
+}
+
+.heading{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px;
+}
+.modal{
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-middle{
+    width:300px;
+    height: 350px;
+}
+
+button{
+    padding: 8px;
+    margin: 16px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
+}
+
+.second-box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 24px  ;
+}
+
+.footer{
+    height:72px;
+    margin-top: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
 }
