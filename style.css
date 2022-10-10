@@ -25,6 +25,7 @@ ul{
 }
 section{
     padding:60px 0; 
+    overflow:hidden;
 }
 /*Header */
 .header{
@@ -135,6 +136,13 @@ ul li a:hover{
     color:yellow;
     transition: .3s ease-in-out;
 }
+@media(max-width: 600px){
+    .server .row, .quote .row{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
 /*Quote*/
 .quote{
     padding:0px;
